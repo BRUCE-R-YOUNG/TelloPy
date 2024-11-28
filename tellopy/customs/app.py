@@ -3,7 +3,7 @@ import cv2
 import tellopy
 
 # テロを初期化し、接続します
-tello = Tello()
+tello = tellopy.Tello()
 tello.connect()
 
 # 離陸します
