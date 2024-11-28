@@ -6,9 +6,10 @@ import tellopy
 tello = tellopy.Tello()
 tello.connect()
 
+time.sleep(2)
 #takeoff
 tello.takeoff()
 
 #land
-time.sleep(5)
+time.sleep(10)
 tello.land()

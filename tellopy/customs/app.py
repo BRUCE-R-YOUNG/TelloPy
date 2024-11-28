@@ -6,6 +6,7 @@ import tellopy
 tello = tellopy.Tello()
 tello.connect()
 
+time.sleep(5)
 # 離陸します
 tello.takeoff()
 
