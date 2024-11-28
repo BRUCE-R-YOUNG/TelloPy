@@ -10,6 +10,8 @@ time.sleep(2)
 #takeoff
 tello.takeoff()
 
+tello.down(50)
+
 #land
 time.sleep(10)
 tello.land()
