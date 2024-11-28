@@ -12,27 +12,27 @@ tello.takeoff()
 
 time.sleep(5)
 # 上昇します
-tello.move_up(50)
+tello.up(50)
 
 time.sleep(5)
 # 下降します
-tello.move_down(50)
+tello.down(50)
 
 time.sleep(5)
 # 前方に移動します
-tello.move_forward(100)
+tello.forward(100)
 
 time.sleep(5)
 # 後方に移動します
-tello.move_back(100)
+tello.back(100)
 
 time.sleep(5)
 # 左に移動します
-tello.move_left(100)
+tello.left(100)
 
 time.sleep(5)
 # 右に移動します
-tello.move_right(100)
+tello.right(100)
 
 time.sleep(5)
 # 反時計回りに90度回転します

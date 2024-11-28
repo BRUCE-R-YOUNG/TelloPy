@@ -17,7 +17,7 @@ def test():
         drone.wait_for_connection(60.0)
         drone.takeoff()
         sleep(5)
-        drone.down(50)
+        drone.down(80)
         sleep(5)
         drone.land()
         sleep(5)
