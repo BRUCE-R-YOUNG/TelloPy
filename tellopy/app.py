@@ -1,6 +1,6 @@
 import time
 import cv2
-from djitellopy import Tello
+import tellopy
 
 # テロを初期化し、接続します
 tello = Tello()

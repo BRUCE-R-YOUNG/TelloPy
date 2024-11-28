@@ -2,12 +2,12 @@
 
 import time
 import cv2
-from djitellopy import Tello
+import tellopy
 import numpy as np
 from ultralytics import YOLO  # YOLOv8を使用
 
 # Telloを初期化して接続
-tello = Tello()
+tello = tellopy.Tello()
 tello.connect()
 
 # ストリーミングを開始

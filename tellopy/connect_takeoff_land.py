@@ -1,9 +1,9 @@
 import time
 import cv2
-from djitellopy import Tello
+import tellopy
 
 #connect
-tello = Tello()
+tello = tellopy.Tello()
 tello.connect()
 
 #takeoff
