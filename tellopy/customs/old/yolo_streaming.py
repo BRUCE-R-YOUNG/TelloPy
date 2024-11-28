@@ -2,16 +2,13 @@
 
 import time
 import cv2
-import tellopy
+from djitellopy import Tello
 import numpy as np
 from ultralytics import YOLO  # YOLOv8を使用
 
 # Telloを初期化して接続
-tello = tellopy.Tello()
+tello = Tello()
 tello.connect()
-
-# バッテリーレベルを表示
-print(f"Tello Battery: {tello.get_battery()}%")
 
 # ストリーミングを開始
 tello.streamon()

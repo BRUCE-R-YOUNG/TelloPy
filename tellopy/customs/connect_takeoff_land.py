@@ -2,16 +2,28 @@ import time
 import cv2
 import tellopy
 
+def handler(event, sender, data, **args):
+    drone = sender
+    if event is drone.EVENT_FLIGHT_DATA:
+        print(data)
+
+
 #connect
-tello = tellopy.Tello()
-tello.connect()
+drone  = tellopy.Tello()
+drone.connect()
+drone.subscribe(drone.EVENT_FLIGHT_DATA, handler)
+
 
 time.sleep(2)
 #takeoff
-tello.takeoff()
+drone.takeoff()
+drone.down(70)
 
-tello.down(50)
+time.sleep(5)
+drone.forward
+time.sleep(5)
+drone.counter_clockwise(90)
 
 #land
 time.sleep(10)
-tello.land()
+drone.land()
